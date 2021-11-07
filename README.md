@@ -2,7 +2,7 @@
 
 This is ETL/ELT script for Google Cloud Platform.
 
-##Tools:
+## Tools:
 1. Google Cloud Platform (GCP) including:
   · GCP Instance
   · GCP Bucket/Cloud Storage
@@ -12,15 +12,15 @@ This is ETL/ELT script for Google Cloud Platform.
 3. Airflow
 4. Python
 
-##Dataset:
+## Dataset:
 1. Search Enngine Result (on Flight & Ticker keyword) datasets
 
-##Setting The GCP Instance
+## Setup The GCP Instance
 
 
-##Setting the GCP Bucker/Google Cloud Storage
+## Settup the GCP Bucker/Google Cloud Storage
 
-##Setting the GCP Dataflow & Bigquery
+## Settup the GCP Dataflow & Bigquery
 
-##Setting the Docker & Airflow
+## Setup the Docker & Airflow
 
