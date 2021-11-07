@@ -27,10 +27,16 @@ This is ETL/ELT script for Google Cloud Platform.
 1. Go to Compute Engine > VM Instances
 2. Create a Instance with spec: e2-standard-2 (2vCPU, 8GB memory), OS Debian 10, 50 GB HDD
 
+![image](https://user-images.githubusercontent.com/18484807/140650529-c0ab00d8-f5e2-4636-9766-aaee2b5dbf80.png)
+
+
 ## Setup the GCP Bucker/Google Cloud Storage
 1. Go to Cloud Storage
 2. Create Bucket
 3. Upload the data files
+
+![image](https://user-images.githubusercontent.com/18484807/140650483-506d6862-8c15-4495-b06b-32ff85076e16.png)
+
 
 ## Setup GCP connection firewall
 1. Go to VPC Network > Firewall
@@ -53,4 +59,10 @@ source: https://medium.com/apache-airflow/a-simple-guide-to-start-using-apache-a
 source: https://medium.com/codebrace/working-on-on-prem-external-airflow-with-google-cloud-platform-gcp-5b2e77b0e3ba
 
 ## Settup the GCP Dataflow & Bigquery
+1. For Dataflow, go to Dataflow menu in Big Data section
+2. You can create job based on template or create it by code in your instance
+3. For Big Query, go to Big Query menu in Big Data section
+4. You can create your data sets and tables on your data sets
+
+![image](https://user-images.githubusercontent.com/18484807/140650574-e45dc50b-d3eb-472b-a294-b24920689b20.png)
 
