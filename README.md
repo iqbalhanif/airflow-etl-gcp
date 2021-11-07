@@ -1,13 +1,14 @@
-# airflow-etl-gcp
+# ETL/ELT with GCP
+
 
 This is ETL/ELT script for Google Cloud Platform.
 
 ## Tools:
-1. Google Cloud Platform (GCP) including: <\br>
-  · GCP Instance <\br>
-  · GCP Bucket/Cloud Storage <\br>
-  · GCP BigQuery <\br>
-  · GCP DataFlow <\br>
+1. Google Cloud Platform (GCP) including: <br />
+  · GCP Instance <br />
+  · GCP Bucket/Cloud Storage <br />
+  · GCP BigQuery <br />
+  · GCP DataFlow <br />
 2. Docker
 3. Airflow
 4. Python
