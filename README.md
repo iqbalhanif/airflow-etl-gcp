@@ -3,11 +3,11 @@
 This is ETL/ELT script for Google Cloud Platform.
 
 ## Tools:
-1. Google Cloud Platform (GCP) including:
-  · GCP Instance
-  · GCP Bucket/Cloud Storage
-  · GCP BigQuery
-  · GCP DataFlow
+1. Google Cloud Platform (GCP) including: <\br>
+  · GCP Instance <\br>
+  · GCP Bucket/Cloud Storage <\br>
+  · GCP BigQuery <\br>
+  · GCP DataFlow <\br>
 2. Docker
 3. Airflow
 4. Python
