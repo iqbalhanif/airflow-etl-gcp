@@ -78,7 +78,7 @@ ETL (pipeline) process details:
 6. Delete Unwanted Data (drop unrelevant columns)
 7. Write to Big Query (create big query table and upload final data)
 
-scripts are in /pipeline folder
+pipeline scripts are in /pipeline folder
 
 How to implement the ETL:
 1. Upload data into Google cloud storage:
@@ -87,6 +87,8 @@ How to implement the ETL:
 4. Run the pipeline script and monetize it in Google Data Flow
 5. If it successly executed, create a DAG for airflow
 6. Test and schedule the Airflow DAG
+
+DAG script is in /dags folder 
 
 ![image](https://user-images.githubusercontent.com/18484807/141685135-7643a675-4465-4a59-b080-b1f209035d51.png)
 
