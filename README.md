@@ -66,3 +66,35 @@ source: https://medium.com/codebrace/working-on-on-prem-external-airflow-with-go
 
 ![image](https://user-images.githubusercontent.com/18484807/140650574-e45dc50b-d3eb-472b-a294-b24920689b20.png)
 
+## Creating Data Pipeline
+Main Goal: Create ETL (pipeline) process for uploading data .csv from google cloud stiorage (bucket) to google big query table
+
+ETL (pipeline) process details:
+1. Read Data (from google cloud storage)
+2. Split Data (using delimiter ',')
+3. Format to Dict (convert to python dictionary/JSON like format)
+4. Delete Incomplete Data (remove row with MULL)
+5. Change Data Type (convert data type into suitable data type such as string to int, string to date)
+6. Delete Unwanted Data (drop unrelevant columns)
+7. Write to Big Query (create big query table and upload final data)
+
+scripts are in /pipeline folder
+
+How to implement the ETL:
+1. Upload data into Google cloud storage:
+2. Create new data set in Google Big Query (note: make sure that cloud storage and big query dataset is in same/relevant region)
+3. Create pipeline script
+4. Run the pipeline script and monetize it in Google Data Flow
+5. If it successly executed, create a DAG for airflow
+6. Test and schedule the Airflow DAG
+
+![image](https://user-images.githubusercontent.com/18484807/141685135-7643a675-4465-4a59-b080-b1f209035d51.png)
+
+![image](https://user-images.githubusercontent.com/18484807/141685167-c72d4229-328f-42b2-b835-6e603528309a.png)
+
+![image](https://user-images.githubusercontent.com/18484807/141685277-e545ac4e-8bd0-4832-ab84-abb2ba180ac6.png)
+
+![image](https://user-images.githubusercontent.com/18484807/141685292-dc89cd43-af0c-4d50-8484-81b23aa8e644.png)
+
+
+
