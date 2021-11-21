@@ -1,4 +1,4 @@
-# ETL/ELT with Google Cloud Platform
+# ETL/ELT with Airflow (Google Cloud Platform)
 
 
 This is ETL/ELT script for Google Cloud Platform.
