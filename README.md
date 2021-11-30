@@ -73,10 +73,12 @@ ETL (pipeline) process details:
 1. Read Data (from google cloud storage)
 2. Split Data (using delimiter ',')
 3. Format to Dict (convert to python dictionary/JSON like format)
-4. Delete Incomplete Data (remove row with MULL)
+4. Delete Incomplete Data (remove row with NULL)
 5. Change Data Type (convert data type into suitable data type such as string to int, string to date)
 6. Delete Unwanted Data (drop unrelevant columns)
 7. Write to Big Query (create big query table and upload final data)
+
+reference:  https://towardsdatascience.com/apache-beam-pipeline-for-cleaning-batch-data-using-cloud-dataflow-and-bigquery-f9272cd89eba
 
 pipeline scripts are in /pipeline folder
 
