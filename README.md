@@ -90,6 +90,8 @@ How to implement the ETL:
 5. If it successly executed, create a DAG for airflow
 6. Test and schedule the Airflow DAG
 
+another note: https://stackoverflow.com/questions/49302859/gsutil-serviceexception-401-anonymous-caller-does-not-have-storage-objects-list
+
 DAG script is in /dags folder 
 
 ![image](https://user-images.githubusercontent.com/18484807/141685135-7643a675-4465-4a59-b080-b1f209035d51.png)
