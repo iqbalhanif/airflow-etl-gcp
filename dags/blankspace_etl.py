@@ -20,15 +20,23 @@ dag = DAG(
 
 bash_etl1 = BashOperator(
     task_id='beers_etl',
-    bash_command='python3 /home/iqbal_hanif_ipb/gcp/docker-local/pipeline/batch.py --runner DataFlowRunner --project amiable-crane-330914 --temp_location gs://blankspace89783/batch/temp --staging_location gs://blankspace89783/batch/stag --region us-central1 --job_name drinkbeer',
+    bash_command='python3 /home/iqbal_hanif_ipb/gcp/docker-local/pipeline/batch-beers.py --runner DataFlowRunner --project amiable-crane-330914 --temp_location gs://blankspace89783/batch/temp --staging_location gs://blankspace89783/batch/stag --region us-central1 --job_name drinkbeer',
     dag=dag,
 )
 
 bash_etl2 = BashOperator(
     task_id='citizens_etl',
-    bash_command='python3 /home/iqbal_hanif_ipb/gcp/docker-local/pipeline/batch2.py --runner DataFlowRunner --project amiable-crane-330914 --temp_location gs://blankspace89783/batch/temp --staging_location gs://blankspace89783/batch/stag --region us-central1 --job_name citizensregister',
+    bash_command='python3 /home/iqbal_hanif_ipb/gcp/docker-local/pipeline/batch-citizen.py --runner DataFlowRunner --project amiable-crane-330914 --temp_location gs://blankspace89783/batch/temp --staging_location gs://blankspace89783/batch/stag --region us-central1 --job_name citizensregister',
     dag=dag,
 )
+
+bash_etl3 = BashOperator(
+    task_id='flight_etl',
+    bash_command='python3 /home/iqbal_hanif_ipb/gcp/docker-local/pipeline//batch-flight.py --runner DataFlowRunner --project amiable-crane-330914 --temp_location gs://blankspace89783/batch/temp --staging_location gs://blankspace89783/batch/stag --region us-central1 --job_name flight',
+    dag=dag,
+)
+
+
 #DAG order
 
-bash_etl1 >> bash_etl2
+bash_etl1 >> bash_etl2 >> bash_etl3
